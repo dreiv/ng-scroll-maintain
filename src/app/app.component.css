@@ -1,0 +1,10 @@
+.fixed {
+  position: fixed;
+  top: 40px;
+  right: 20px;
+}
+
+.scrollFix {
+  overflow: auto;
+  height: 100%;
+}

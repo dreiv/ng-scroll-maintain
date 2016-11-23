@@ -1,0 +1,10 @@
+<div class="fixed">
+  <button (click)="clicked()">Click me to add items</button>
+</div>
+
+<div class='scrollFix'
+     appMaintainScrollPosition
+     [beforeContentChanges]="beforeContentChanges"
+     [contentChanges]="contentChanges">
+  <app-item *ngFor="let item of itemList;" [item]="item"></app-item>
+</div>
