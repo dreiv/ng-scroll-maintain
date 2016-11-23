@@ -1,0 +1,29 @@
+{
+  "name": "ng-webpack",
+  "description": "simple angular 2 application builded with webpack",
+  "scripts": {
+    "build": "rimraf dist && webpack --config webpack.config.js",
+    "start": "npm run build && webpack-dev-server --inline --progress --port 1337"
+  },
+  "dependencies": {
+    "@angular/common": "^2.1.1",
+    "@angular/compiler": "^2.1.1",
+    "@angular/core": "^2.1.1",
+    "@angular/platform-browser": "^2.1.1",
+    "@angular/platform-browser-dynamic": "^2.1.1",
+    "core-js": "^2.4.1",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.26"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "@types/node": "^6.0.46",
+    "angular2-template-loader": "^0.6.0",
+    "awesome-typescript-loader": "^2.2.4",
+    "raw-loader": "^0.5.1",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.0.6",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^2.1.0-beta.9"
+  }
+}
